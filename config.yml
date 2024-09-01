@@ -43,7 +43,7 @@
 
 # What is your status page called?
 # Shows up in the browser bar and meta tags
-title: Eggsample Status
+title: Minterger Status Page
 
 # Should posts, which have a publish date
 # from the future, be built? Useful for
@@ -315,10 +315,10 @@ params:
   # Tabs on homepage
   # Uncomment to enable.
   #
-  Format:
-  customTabs:
-    - name: Name
-      link: https://example.com
+  # Format:
+  # customTabs:
+  #   - name: Name
+  #     link: https://example.com
 
   # Disable complex server-side
   # calculations that may impact
