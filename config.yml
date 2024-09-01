@@ -180,6 +180,10 @@ params:
       description: The speedtest tracker for the home network.
       category: Home Server
       link: https://speed.minterger.xyz/
+    - name: WireGuard dashboard
+      description: The WireGuard dashboard for the home network.
+      category: Home Server
+      link: https://wg.minterger.xyz/
     # - name: API
     #   description: The guts of the application.
     #   category: Uncategorized
