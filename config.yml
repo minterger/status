@@ -71,7 +71,7 @@ params:
   categories:
     - name: Home Server
       description: The server located at home.
-      closed: true
+      closed: false
       untitled: false
     - name: Uncategorized
       untitled: true
