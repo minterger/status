@@ -64,9 +64,9 @@ buildFuture: true
 #
 # See:  https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes
 # Also: https://www.w3schools.com/tags/ref_language_codes.asp
-languageCode: es
+languageCode: en
 
-# What translation file should cState use?
+# What translatison file should cState use?
 # You can also define whether missing
 # translations should get placeholders.
 #
@@ -78,7 +78,7 @@ languageCode: es
 # than English! When tested with Lithuanian,
 # it would add unnecesary placeholders to
 # values that were intentionally empty.
-defaultContentLanguage: es
+defaultContentLanguage: en
 
 # What is the hostname or path to the root?
 # Where is the site hosted?
