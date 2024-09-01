@@ -64,7 +64,7 @@ buildFuture: true
 #
 # See:  https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes
 # Also: https://www.w3schools.com/tags/ref_language_codes.asp
-languageCode: en
+languageCode: es
 
 # What translation file should cState use?
 # You can also define whether missing
@@ -78,7 +78,7 @@ languageCode: en
 # than English! When tested with Lithuanian,
 # it would add unnecesary placeholders to
 # values that were intentionally empty.
-defaultContentLanguage: en
+defaultContentLanguage: es
 
 # What is the hostname or path to the root?
 # Where is the site hosted?
@@ -89,7 +89,7 @@ defaultContentLanguage: en
 # version 3. If you are just testing,
 # localhost should automatically work.
 #
-# Example: 
+# Example:
 # baseUrl: https://status.example.com/
 #
 # For testing:
@@ -110,7 +110,6 @@ baseURL: https://example.com
 # We recommend to keep this at `true`.
 # BOOLEAN; `true`, `false`
 enableGitInfo: true
-
 
 ############################################################
 # +------------------------------------------------------+ #
@@ -139,14 +138,17 @@ params:
   #   Or it can be used alongside other categories.
   #
   # These are case sensitive.
-  # 
+  #
   # For help, see the wiki:
   # https://github.com/cstate/cstate/wiki/Customization
   categories:
-    - name: North Coast
-      description: The main servers are located here.
+    # - name: North Coast
+    #   description: The main servers are located here.
+    #   closed: true
+    - name: Home Server
+      description: The server located at home.
       closed: true
-    - name: Empty Category
+    # - name: Empty Category
     - name: Uncategorized
       untitled: true
 
@@ -158,20 +160,32 @@ params:
   # For help, see the wiki:
   # https://github.com/cstate/cstate/wiki/Customization
   systems:
-    - name: Gateway
-      category: North Coast
-    - name: Backup Gateway
-      category: North Coast
-    - name: Website
-      description: The web frontend for the application.
-      category: Uncategorized
-      link: https://example.com/
-    - name: API
-      description: The guts of the application.
-      category: Uncategorized
-    - name: Media Proxy
-      description: This is the service responsible for serving images, audio, and video. It is reliant on our CDN.
-      category: Uncategorized
+    # - name: Gateway
+    #   category: North Coast
+    # - name: Backup Gateway
+    #   category: North Coast
+    # - name: Website
+    #   description: The web frontend for the application.
+    #   category: Uncategorized
+    #   link: https://example.com/
+    - name: Pi-hole
+      description: The DNS server for the home network.
+      category: Home Server
+      link: https://pihole.minterger.xyz/
+    - name: Portainer
+      description: The container management system.
+      category: Home Server
+      link: https://portainer.minterger.xyz/
+    - name: Speedtest Tacker
+      description: The speedtest tracker for the home network.
+      category: Home Server
+      link: https://speed.minterger.xyz/
+    # - name: API
+    #   description: The guts of the application.
+    #   category: Uncategorized
+    # - name: Media Proxy
+    #   description: This is the service responsible for serving images, audio, and video. It is reliant on our CDN.
+    #   category: Uncategorized
 
   # What date format to use?
   #
@@ -188,7 +202,7 @@ params:
   # Should relative time (x min ago) be used?
   #
   # IMPORTANT: In the frontmatter, the dates MUST be in
-  # the UTC time zone for this to work preperly. If you 
+  # the UTC time zone for this to work preperly. If you
   # use Netlify CMS, all good — the CMS picks UTC time
   # by default. Otherwise, there may be very inaccurate
   # times if multiple time zones are in your issue files.
@@ -198,8 +212,8 @@ params:
   # wish to use relative time but old issues do not have
   # UTC time (and therefore are out of sync by ±24 hours)
   #
-  # Read the wiki for more: 
-  # https://github.com/cstate/cstate/wiki/Customization#time 
+  # Read the wiki for more:
+  # https://github.com/cstate/cstate/wiki/Customization#time
   #
   # If enabled, will display relative times in places like
   # the incident history and summaries instead of using
@@ -209,7 +223,7 @@ params:
   # Default: `true`
   # BOOLEAN; `true`, `false`
   useRelativeTime: true
- 
+
   # If enabled, doesn't show seconds on relative times.
   #
   # With option ON (true):
