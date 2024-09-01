@@ -315,11 +315,10 @@ params:
   # Tabs on homepage
   # Uncomment to enable.
   #
-  # Format:
-  # customTabs:
-  #  -
-  #    name: Name
-  #    link: https://example.com
+  Format:
+  customTabs:
+    - name: Name
+      link: https://example.com
 
   # Disable complex server-side
   # calculations that may impact
