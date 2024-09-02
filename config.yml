@@ -45,7 +45,7 @@ params:
       description: The container management system.
       category: Home Server
       link: https://portainer.minterger.xyz/
-    - name: Speedtest Tacker
+    - name: Speedtest Tracker
       description: The speedtest tracker for the home network.
       category: Home Server
       link: https://speed.minterger.xyz/
